@@ -1,0 +1,1078 @@
+:root {
+    --main-color: #19c8fa;
+    --transparent-color: rgb(15 116 143 / 70%);
+    --section-padding: 100px;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Work Sans', sans-serif; */
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.header {
+    background-image:url("https://images.unsplash.com/photo-1637793492728-0cb7af658e69?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80");
+    background-size: cover;
+    height: 800px;
+}
+
+.header .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+.header .head::after {
+    content: " ";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+}
+
+.header .head .links {
+    display: flex;
+    align-items: center;
+}
+
+.header .head ul {
+    list-style: none;
+    margin: 0 30px 0 ;
+    padding: 0;
+    display: flex;
+
+}
+
+.header .head ul li {
+    color: white;
+    display: block;
+    padding: 38px 10px ;
+}
+
+.header .head ul .spe {
+    color: var(--main-color);
+    position: relative;
+}
+
+.header .head ul .spe::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-color);
+    z-index: 30;
+
+}
+
+.header .head i {
+    color: white;
+    font-size: 18px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.header .head i::after {
+    content: " ";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    top: 0;
+    left: -10px;
+}
+
+.header .text {
+    color: white;
+    position: absolute;
+    width: 50%;
+    padding: 50px 40px 50px 120px;
+    left: 0;
+    top: 50%;
+    background-color: var(--transparent-color);
+}
+
+.header .text h3 {
+    margin: 0 0 20px 0;
+    font-size: 28px;
+    font-weight: 600;
+    
+}
+
+.header .text p {
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.header  i[class ="fa-solid fa-arrow-right"] {
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    position: absolute;
+    top: 70%;
+    right: 30px;
+}
+
+.header  i[class ="fa-solid fa-arrow-left"] {
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    position: absolute;
+    top: 72%;
+    left: 30px;
+}
+
+.header  .icon  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header .icon span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-left: 8px;
+}
+
+.header .icon .spec {
+    border-color: var(--main-color);
+    background-color: var(--main-color);
+}
+
+.services {
+    padding: var(--section-padding);
+}
+
+.special-heading {
+    width: fit-content;
+    padding: 5px;
+    text-align: center;
+    margin: 0 auto 0 ;
+}
+
+.tittle::before {
+    content: " ";
+    width: 70%;
+    position: absolute;
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.tittle {
+    position: relative;
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0 auto 0 auto;
+    width: fit-content;
+    padding: 8px;
+}
+
+.tittle::after {
+    content: " ";
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: absolute;
+    bottom: -7.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.special-heading p  {
+    font-size: 17px;
+    color: #777;
+    margin-top: 40px;
+    width: 550px;
+    line-height: 1.7;
+
+}
+
+.services .boxs {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.services .boxs .box {
+    margin-left: 40px;
+    margin-bottom: 30px;
+    flex-basis: 45%;
+    display: flex;
+}
+
+.services .boxs .box i {
+    flex-basis: 80px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.services .boxs .box .text {
+    flex: 1;
+}
+
+.services .boxs .box .text h3 {
+    margin: 0 0 20px;
+    color: var(--main-color);
+}
+
+.services .boxs .box .text p {
+    color: #777;
+    line-height: 1.8;
+
+}
+
+.landing {
+    padding: var(--section-padding);
+    background-image: url("https://media.istockphoto.com/id/1201989745/photo/abstract-blue-and-black-are-light-pattern-with-the-gradient-is-the-with-floor-wall-metal.webp?b=1&s=170667a&w=0&k=20&c=mJ9W5NEi3rQoxDKPxh2ugLPgo1mOyXcYNyS7MXWeimw=");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+}
+
+.landing::after{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.288);    
+}
+
+.landing .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.landing .image {
+    position: relative;
+    flex: 1;
+    z-index: 2;
+}
+
+.landing img {
+   position: relative;
+    bottom: -150px;
+}
+
+.landing .text {
+    padding: 50px ;
+    background-color: var(--transparent-color);
+    flex: 1;
+    z-index: 2;
+    position: relative;
+    right: -100px;
+}
+
+.landing .text h3 {
+    margin-bottom: 40px;
+    color: white;
+    font-weight: 500;
+}
+
+.landing .text ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.landing .text ul li {
+    margin-top: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.landing .text ul li i {
+    color: white;
+    width: 25px;
+    margin-right: 12px;
+}
+
+.portfolio {
+    margin-top: 50px;
+}
+
+.portfolio .nav {
+    text-align: center;
+    width: fit-content;
+    padding: 5px;
+    margin: 50px auto 30px;
+
+}
+
+.portfolio .nav  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.portfolio .nav  ul li {
+    display: block;
+    width: fit-content;
+    padding: 8px;
+}
+
+.portfolio .nav  ul .spec {
+    color: white;
+    background-color: var(--main-color);
+}
+
+.portfolio .boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+
+.portfolio .boxes .box {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 4px;
+}
+
+.portfolio .boxes .box img {
+    max-width: 100%;
+    transition: .3s;
+    /* overflow: hidden; */
+}
+
+.portfolio .boxes .box:hover img {
+  rotate: 4deg ;
+  scale: 1.1
+}
+
+.portfolio .boxes .box .caption {
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    bottom: -100px;
+    transition: .3s;
+}
+
+.portfolio .boxes .box:hover .caption {
+    bottom: 0;
+}
+
+.portfolio .boxes .box .caption h5 {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.portfolio .boxes .box p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--main-color);
+
+}
+
+.portfolio .link {
+    width: fit-content;
+    margin: 25px auto;
+}
+
+.portfolio .link a {
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.ved {
+    margin-top: 50px;
+    position: relative;
+}
+
+video {
+    width: 100%;
+}
+
+.ved .cap {
+    position: absolute;
+    width: 100%;
+    /* height: 60px; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--transparent-color);
+    text-align: center;
+    padding: 50px;
+}
+
+.ved .cap h3 {
+    margin-bottom: 25px;
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.ved .cap p {
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.ved .cap a {
+    display: block;
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 8px auto;
+}
+
+.about {
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+}
+
+.about .image {
+    position: absolute;
+    bottom: -105px;
+    margin-top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.information .inform {
+    background-image: url("https://media.istockphoto.com/id/1157432726/photo/texture-of-old-violet-paper-background-closeup-structure-of-dense-cardboard.webp?b=1&s=170667a&w=0&k=20&c=kjej4_i05tjmHXPmkpCF7PRkPyJ70M_zEshhW5PwZ0I=");
+    background-size: cover;
+    position: relative;
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+.inform .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    background-color: var(--transparent-color);
+}
+
+.inform .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 120px; */
+    padding: 15px;
+}
+
+.inform .box i {
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-size: 15px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.inform .box h1 {
+    color: white;
+    margin: 25px 0 ;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.inform .box p {
+    color: white;
+    /* margin-top: 50px; */
+    margin-bottom: 30px;
+    font-size: 13px;
+
+}
+
+.teskill  {
+    padding: var(--section-padding);
+}
+
+.teskill .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    column-gap: 50px;
+}
+
+.teskill .testmonials .test1,
+.teskill .skills .test1 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.teskill .testmonials h3,
+.teskill .skills h3 {
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.teskill .testmonials  .p,
+.teskill .skills .p {
+    color: #777;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.teskill .testmonials .social {
+    margin-top: 50px;
+}
+
+.teskill .testmonials .social .soc {
+    display: flex;
+    margin-bottom: 80px;
+    padding: 20px;
+}
+
+.teskill .testmonials .social .image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.teskill .testmonials .social .text {
+    flex: 1;
+    margin-left: 20px;
+    position: relative;
+    /* border-bottom: 1px solid black; */
+}
+
+.teskill .testmonials .social .text::after {
+    content: " ";
+    width: 100%;
+    height: .1px;
+    background-color: #777;
+    bottom: -45px;
+    position: absolute;
+}
+
+.teskill .testmonials .social .text p {
+    line-height: 1.6;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.teskill .testmonials .social .text span {
+    color: #777;
+    position: absolute;
+    right: 35px;
+    bottom: -25px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.teskill .ske {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.teskill .ske .skill {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.teskill .ske .skill p {
+   font-size: 20px;
+   font-weight: 400; 
+   margin-bottom: 10px;
+}
+
+.teskill .ske .skill .out {
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: #ddd;
+    position: relative;
+}
+
+.teskill .ske .skill  .in {
+    display: block;
+    height: 30px;
+    background-color: var(--main-color);
+    position: relative;
+    
+}
+
+.teskill .ske .skill  .in::before {
+    content: attr(data);
+    position: absolute;
+    width: fit-content;
+    padding: 2px 5px;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    top: -30px;
+    right: -18px;
+}
+
+.teskill .ske .skill  .in::after {
+    content: " ";
+    border-width: 8px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    top: -10px;
+    right: -6px;
+}
+
+.qoute {
+    background-image: url("https://media.istockphoto.com/id/515744805/photo/purple-abstract-background.webp?b=1&s=170667a&w=0&k=20&c=ZPD2IXD3PbdD_nmcdMql-A4hqRAyz91Zv6zXhjjpibM=");
+    background-size: cover;
+    height: 250px;
+    padding: var(--section-padding);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.qoute q {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    /* margin-bottom: 50px; */
+}
+
+.qoute span {
+    color: white;
+    display: block;
+    font-size: 20px;
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+
+.pricing {
+    padding: 50px 100px;
+}
+
+.pricing .container .special-heading {
+    margin-bottom: 40px;
+}
+
+.pricing .container .prices {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+}
+
+.pricing .container .prices .price {
+    padding: 25px;
+    text-align: center;
+}
+
+.pricing .container .prices .price .first {
+    border-bottom: 1px solid var(--main-color) ;
+    border-top: 1px solid var(--main-color) ;
+}
+
+.pricing .container .prices .price span{
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.pricing .container .prices .price h1::before {
+    content: "$";
+    position: absolute;
+    font-size: 22px;
+    font-weight: 400;
+    top: 0;
+    left: 60px;
+}
+
+.pricing .container .prices .price h1 {
+    position: relative;
+    font-size: 60px;
+    font-weight: bold;
+    margin:0 0 30px;
+}
+
+.pricing .container .prices .price h1::after {
+    content: "/Mo";
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    font-size: 20px;
+}
+
+.pricing .container .prices ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pricing .container .prices ul li {
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    /* width: fit-content; */
+    border-bottom: 1px solid var(--main-color);
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: capitalize;
+
+}
+
+.pricing .container .prices ul li:not(:last-child) {
+    width: fit-content;
+}
+
+.pricing .container .prices .price a {
+    margin-top: 30px;
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    padding: 20px;
+    /* color: var(--main-color); */
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid var(--main-color);
+}
+
+.pricing .container .info {
+    text-align: center;
+    width: fit-content;
+    margin: 50px auto 0;
+}
+
+.pricing .container .info p {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.pricing .container .info a {
+    display: block;
+    width: fit-content;
+    padding: 20px 25px;
+    background-color: var(--main-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 15px auto 0 ;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.email {
+    margin-top: 40px;
+    background-image: url("https://media.istockphoto.com/id/1457206081/photo/earth-planet-at-night-into-the-dark-cities-light-earth-in-deep-space-with-stars-planet-sphere.webp?b=1&s=170667a&w=0&k=20&c=g2Q-bnmYw1kCGe_bo1HjCzE6WhJRoMBCpjsO8CYjdq8=");
+    background-size: cover;
+    height: 250px;
+    padding: var(--section-padding);
+    /* margin-bottom: 80px; */
+}
+
+.email .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.email .container .sub {
+    display: flex;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white transparent white white;
+    margin-right: 20px;
+    position: relative;
+    width: 450px;
+}
+
+.email .container .mail {
+    display: flex;
+    align-items: center;
+    padding: 18px;
+    color: white;
+    text-align: center;
+}
+
+.email .container .mail i {
+    display: inline;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.email .container .mail input{
+    background-color: transparent;
+    outline: none;
+    border: transparent;
+    padding:px;
+}
+
+.email .container .mail input::placeholder {
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: capitalize;
+    /* margin-left: 25px; */
+}
+
+.email .container  input[type = "button"] {
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white white white transparent;
+}
+
+.email .container p {
+    flex: 1;
+    color: white;
+    text-align: center;
+}
+
+.contact {
+    padding: var(--section-padding);
+    margin-bottom: 50px;
+}
+
+.contact .form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+.contact .form form {
+    position: relative;
+    flex-basis: 75%;
+}
+
+.contact .form form input[type = "text"],
+.contact .form form input[type = "email"],
+.contact .form form textarea {
+    width: 100%;
+    background-color: transparent;
+    padding: 15px;
+    border: 1px solid #888;
+    margin-bottom: 30px;
+    outline: none;   
+}
+
+.contact .form form input[type="button"] {
+    position: absolute;
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background-color: var(--main-color);
+    color: white;
+    bottom: -20px;
+    right: 0;
+    border: none;
+    outline: none;
+}
+
+.contact .form .inform {
+    flex-basis: 25%;
+    margin-left: 50px;
+}
+
+.contact .form .inform .inform1 {
+    margin-bottom: 100px;
+    /* height: 100%; */
+}
+
+.contact .form .inform h4 {
+    font-size: 20px;
+    font-weight: 400;
+    /* margin-bottom: 15px; */
+    margin: 0 0 15px ;
+}
+
+.contact .form .inform p {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.footer {
+    padding: 50px;
+    height: 300px;
+    background-image: url("https://media.istockphoto.com/id/1457206081/photo/earth-planet-at-night-into-the-dark-cities-light-earth-in-deep-space-with-stars-planet-sphere.webp?b=1&s=170667a&w=0&k=20&c=g2Q-bnmYw1kCGe_bo1HjCzE6WhJRoMBCpjsO8CYjdq8=");
+    background-size: cover;
+    text-align: center;
+}
+
+.footer .container img {
+    width: 110px;
+    margin-bottom: 50px;
+}
+
+.footer .container .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.footer .container h4 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    display: block;
+    width: fit-content;
+    position: relative;
+    color: white;
+}
+
+.footer .container h4::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -15px;
+    right: 0;
+    background-color: white;
+}
+
+.footer .container .icons {
+    margin-top: 30px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer .container .icons i {
+    color: white;
+    /* font-size: 18px; */
+    margin-left: 8px;
+}
+
+.footer .container p {
+    color: white;
+    width: 800px;
+    /* word-spacing: 3px; */
+    font-size: 18px;
+}
+
+.footer .container p span {
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
